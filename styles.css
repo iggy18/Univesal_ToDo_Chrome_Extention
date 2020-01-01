@@ -3,3 +3,8 @@
     font-style: italic;
     color: rgb(157, 157, 157); 
 }
+
+.highlight{
+    background: yellow;
+    font-weight: bold;
+}
