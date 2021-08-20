@@ -1,0 +1,24 @@
+{
+    "name": "Getting Started Example",
+    "description": "Allows the user to strike out text on a website. If a user is following steps on a website they can cross them off like a todo list",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "action":{
+        "default_popup": "./popup.html",
+    },
+    "options_page": "./options.html",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting" 
+    ],
+    "host_permisions": [
+        "<all_urls>"
+    ]
+}
+
+
