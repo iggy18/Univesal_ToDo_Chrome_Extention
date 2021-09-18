@@ -1,6 +1,10 @@
 function StrikeHandler(e) {
     let selected = window.getSelection().anchorNode.parentNode;
-    selected.classList.add("strike");
+    if (selected.classList.contains("strike")) {
+        selected.classList.remove("strike");
+    } else{
+        selected.classList.add("strike");
+    }
 }
 
 function GetKeyValue() {
